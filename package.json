@@ -1,0 +1,17 @@
+{
+  "name": "profitplatform",
+  "description": "ProfitPlatform",
+  "author": "Sergey Sobko <bug2bug@dekoprofit.ru>",
+  "dependencies": {
+    "mongoose": "2.x.x",
+    "connect": "2.0.x",
+    "sync" : "0.2.x",
+    "ejs" : "0.6.x",
+    "ldapjs" : "0.4.x",
+    "forever" : "0.x.x",
+    "node-uuid" : "1.x.x",
+    "sprintf" : "0.x.x"
+  },
+  "engine": "node >= 0.6.0",
+  "main" : "common/main.js"
+}

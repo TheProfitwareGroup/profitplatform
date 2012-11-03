@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>ProfitPlatform control center</title>
+        <link rel="stylesheet" type="text/css" href="/style.css"/>
+        <!--[if lt IE 8]>
+            <style type="text/css">
+                #fformwrap {top:50%}
+                #fform1{top:-50%;}
+            </style>
+        <![endif]--> 
+        <!--[if IE 7]>
+            <style type="text/css">
+                #fwrapper{
+                    position:relative;
+                    overflow:hidden;
+                }
+            </style>
+        <![endif]--> 
+        <link rel="stylesheet" type="text/css" href="/js/dojo/dijit/themes/claro/claro.css"/>
+        <script type="text/javascript" src="/js/dojo/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+        <script type="text/javascript" src="/js/platform.js"></script>
+        <script type="text/javascript" src="/js/admin.js"></script>
+    </head> 
+    <body class=" claro "> 
+        <div id="fwrapper"> 
+        	<div id="fouter"> 
+        		<div id="fformwrap"> 
+        			<form id="fform1" method="post" action="" style="opacity:0; width: 400px; z-index: 3;" onSubmit="tryLogin(); return false;"> 
+                        <p style="float:left;"><img src="/images/Folder.png" alt="ProfitPlatform"/></p>
+                        <p id="platform.admin.logintitle">Login to ProfitPlatform</p>
+        				<p>
+        					<label for="t1" id="platform.admin.login">Login:&#160;</label> 
+        					<input type="text" dojoType="dijit.form.TextBox" name="t1" id="t1" value="" /> 
+        				</p>
+        				<p> 
+        					<label for="t2" id="platform.admin.password">Password:&#160;</label> 
+        					<input type="password" dojoType="dijit.form.TextBox" name="t2" id="t2" /> 
+        				</p> 
+            			<p>
+                            <button type="button" dojoType="dijit.form.Button" name="toggleLanguage" id="toggleLanguage">RU</button>
+        				    <button type="submit" dojoType="dijit.form.Button" name="b2" id="platform.admin.enter">Enter</button>
+                        </p> 
+        			</form> 
+                </div> 
+        	</div> 
+        </div> 
+    </body> 
+</html> 

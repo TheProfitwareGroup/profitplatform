@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>ProfitPlatform control center</title>
+        <link rel="stylesheet" type="text/css" href="/style.css"/>
+        <!--[if lt IE 8]>
+            <style type="text/css">
+                #fformwrap {top:50%}
+                #fform1{top:-50%;}
+            </style>
+        <![endif]--> 
+        <!--[if IE 7]>
+            <style type="text/css">
+                #fwrapper{
+                    position:relative;
+                    overflow:hidden;
+                }
+            </style>
+        <![endif]--> 
+        <link rel="stylesheet" type="text/css" href="/js/dojo/dijit/themes/claro/claro.css"/>
+        <script type="text/javascript" src="/js/dojo/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+        <script type="text/javascript" src="/js/platform.js"></script>
+        <script type="text/javascript" src="/js/admin.js"></script>
+    </head> 
+    <body class=" claro "> 
+        <div id="fwrapper"> 
+            <div id="fouter"> 
+        		<div id="fformwrap"> 
+        			<div id="fform1" style="opacity:0; width: 550px; height: 500px; z-index: 3;"> 
+                        <p>
+                            <span style="float:left">
+                                <span>ProfitPlatform </span><span id="version"></span>
+                            </span>
+                            <span>
+                                <button type="button" dojoType="dijit.form.Button" name="toggleLanguage" id="toggleLanguage">RU</button>
+                                <button type="button" dojoType="dijit.form.Button" name="exit" id="platform.admin.exit">Exit</button>
+                            </span>
+                        </p>
+                        <p id="adminform">
+                            <img src="/images/Home.png" id="s_home" class="menu" onClick="changePage(getInfoPage);"/>
+                            <img src="/images/Lock.png" id="s_private" class="menu" onClick="changePage(getSchemaPage);"/>
+                            <img src="/images/Gears.png" id="s_autoproc" class="menu"/>
+                            <img src="/images/User_male.png" id="s_users" class="menu"/>
+                            <img src="/images/Notepad.png" id="s_settings" class="menu"/>
+                            <img src="/images/Database.png" id="s_db" class="menu"/>
+                            <img src="/images/Planet.png" id="s_upgrade" class="menu"/>
+                            <br/><br/>
+                            <span id="content"></span>
+                        </p>
+                    </div>
+                </div> 
+        	</div> 
+        </div> 
+    </body> 
+</html>

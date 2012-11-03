@@ -1,0 +1,64 @@
+* {margin:0;padding:0}
+html,body{height:100%}
+#fwrapper{
+    height:100%;
+    width:100%;
+	display:table;
+	vertical-align:middle;
+}
+#fouter{
+	display:table-cell;
+	vertical-align:middle;
+}
+#fformwrap{
+	position:relative;
+	left:50%;
+	float:left;
+}
+#fform1{
+	border:1px solid #000;
+	padding:20px 20px;
+	position:relative;
+	text-align:right;
+	left:-50%;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    background: #feffe8; /* Old browsers */
+    background: -moz-linear-gradient(top, #feffe8 0%, #d6dbbf 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffe8), color-stop(100%,#d6dbbf)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #feffe8 0%,#d6dbbf 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #feffe8 0%,#d6dbbf 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #feffe8 0%,#d6dbbf 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#d6dbbf',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #feffe8 0%,#d6dbbf 100%); /* W3C */
+}
+
+#adminform{
+    border:1px solid #000;
+	padding:20px 20px;
+	position:relative;
+	text-align:center;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    background: #ffffff;
+    width: 690px;
+    height: 350px;
+    display:table-cell;
+}
+
+img.menu{
+    cursor : pointer;   
+}
+
+#content{
+    margin-top: 30px;   
+    display: table-cell;
+    width: 100%;
+    text-align: justify;
+}
+
+#platform\.admin\.logintitle{
+    font-size: 20px;   
+}
+p{margin:1em 0}
+/* input{position:relative;background:#ffffcc}*/
