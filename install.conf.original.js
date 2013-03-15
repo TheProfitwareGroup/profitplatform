@@ -14,7 +14,7 @@ require('core/install.js')(
             },
             {
                 login: 'eventflow',
-                password: 'eventflowsecretpassword',
+                password: options.eventflowkey,
                 name: 'Eventflow',
                 surname: 'User',
                 roles: access.LEVEL_APPS,
