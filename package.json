@@ -1,7 +1,7 @@
 {
     "name": "profitplatform",
     "description": "ProfitPlatform",
-    "author": "Sergey Sobko <bug2bug@dekoprofit.ru>",
+    "author": "Sergey Sobko <S.Sobko@profitware.ru>",
     "dependencies": {
         "mongoose": "2.x.x",
         "connect": "1.8.x",

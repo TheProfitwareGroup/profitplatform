@@ -95,6 +95,10 @@ require('core/install.js')(
             {
                 name: 'app.eventflow.dispatch.profitware.sms',
                 level: access.LEVEL_APPS
+            },
+            {
+                name: 'app.eventflow.dispatch.profitware.zmq-db',
+                level: access.LEVEL_APPS
             }
         ],
 
@@ -193,10 +197,58 @@ require('core/install.js')(
                                 name: 'cnt',
                                 type: 'in',
                                 title: 'Колчество отправленных сообщений'
+                            },
+                            {
+                                name: 'error',
+                                type: 'in',
+                                title: 'Ошибка'
+                            },
+                            {
+                                name: 'error_code',
+                                type: 'in',
+                                title: 'Код ошибки'
                             }
                         ],
                         dispatcher: {
                             accepted: 'app.eventflow.dispatch.profitware.sms'
+                        }
+                    },
+                    {
+                        name: 'EF_DEPLOY',
+                        description: 'Деплоймент из репозитария SVN',
+                        fields: [
+                            {
+                                name: 'project',
+                                type: 'select',
+                                title: 'Наименование проекта',
+                                description: 'Наименование проекта в SVN',
+                                list: [
+                                    {
+                                        name: 'myrussia',
+                                        value: 'Моя Россия'
+                                    },
+                                    {
+                                        name: 'orthodoxy-world',
+                                        value: 'Православный мир'
+                                    },
+                                    {
+                                        name: 'eventflow-profitware',
+                                        value: 'EventFlow @ Profitware'
+                                    },
+                                    {
+                                        name: 'weblab-profitware',
+                                        value: 'WebLab @ Profitware'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'data',
+                                type: 'in',
+                                title: 'Данные от ZMQ-провайдера'
+                            }
+                        ],
+                        dispatcher: {
+                            accepted: 'app.eventflow.dispatch.profitware.zmq-db'
                         }
                     }
                 ]
